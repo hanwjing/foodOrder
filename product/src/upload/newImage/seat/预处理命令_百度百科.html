@@ -1,0 +1,1657 @@
+<!DOCTYPE html>
+<!-- saved from url=(0094)https://baike.baidu.com/item/%E9%A2%84%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4/10204389?fr=aladdin -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="./预处理命令_百度百科_files/element.min.js.下载"></script><script async="" src="./预处理命令_百度百科_files/monkey.min.js.下载"></script><script async="" src="./预处理命令_百度百科_files/dp.min.js.下载"></script><script type="text/javascript" async="" src="./预处理命令_百度百科_files/auto_dup"></script>
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="referrer" content="always">
+<meta name="description" content="程序设计语言的预处理的概念：在编译之前进行的处理。 C语言的预处理主要有三个方面的内容： 1.宏定义； 2.文件包含； 3.条件编译。 预处理命令以符号“#”开头。...">
+<title>预处理命令_百度百科</title>
+<link rel="shortcut icon" href="https://baike.baidu.com/favicon.ico" type="image/x-icon">
+<link rel="icon" sizes="any" mask="" href="https://www.baidu.com/img/baidu.svg">
+
+<meta name="keywords" content="预处理命令 预处理命令宏定义 预处理命令文件包含 预处理命令条件编译">
+<meta name="image" content="https://bkssl.bdimg.com/cms/static/baike.png">
+<script src="./预处理命令_百度百科_files/hm.js.下载"></script><script async="" src="./预处理命令_百度百科_files/alog.min.js.下载"></script><script type="text/javascript">
+  // 配置 PD 监控。
+  window.alogObjectConfig = {
+    product: '103',
+    page: '103_1',
+    speed: {
+      sample: '0.008'
+    },
+    monkey: {
+      sample: '1',
+      hid: '1533'
+    },
+    exception: { 
+      sample: '0.004'
+    },
+    feature: {
+      sample: '0.004'
+    },
+    csp: {
+      sample: '0.008',
+      'default-src': [
+        {match: '*.baidu.com,*.bdimg.com,localhost', target: 'Accept'},
+        {match: '*', target: 'Accept,Warn'}
+      ]
+    }
+  };
+
+  void function(a,b,c,d,e,f,g){a.alogObjectName=e,a[e]=a[e]||function(){(a[e].q=a[e].q||[]).push(arguments)},a[e].l=a[e].l||+new Date,d="https:"===a.location.protocol?"https://fex.bdstatic.com"+d:"http://fex.bdstatic.com"+d;var h=!0;if(a.alogObjectConfig&&a.alogObjectConfig.sample){var i=Math.random();a.alogObjectConfig.rand=i,i>a.alogObjectConfig.sample&&(h=!1)}h&&(f=b.createElement(c),f.async=!0,f.src=d+"?v="+~(new Date/864e5)+~(new Date/864e5),g=b.getElementsByTagName(c)[0],g.parentNode.insertBefore(f,g))}(window,document,"script","/hunter/alog/alog.min.js","alog"),void function(){function a(){}window.PDC={mark:function(a,b){alog("speed.set",a,b||+new Date),alog.fire&&alog.fire("mark")},init:function(a){alog("speed.set","options",a)},view_start:a,tti:a,page_ready:a}}();
+  void function(n){var o=!1;n.onerror=function(n,e,t,c){var i=!0;return!e&&/^script error/i.test(n)&&(o?i=!1:o=!0),i&&alog("exception.send","exception",{msg:n,js:e,ln:t,col:c}),!1},alog("exception.on","catch",function(n){alog("exception.send","exception",{msg:n.msg,js:n.path,ln:n.ln,method:n.method,flag:"catch"})})}(window);
+</script>
+<meta name="csrf-token" content="">
+<meta itemprop="dateUpdate" content="2018-08-14 04:10:13">
+
+<!--[if lte IE 9]>
+<script>
+    (function() {
+      var e = "abbr,article,aside,audio,canvas,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(","),
+        i = e.length;
+      while (i--) {
+        document.createElement(e[i]);
+      }
+    })();
+  </script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="./预处理命令_百度百科_files/wiki-lemma_a152d97.css"><link rel="stylesheet" type="text/css" href="./预处理命令_百度百科_files/wiki-common-base_d6885f2.css"><link rel="stylesheet" type="text/css" href="./预处理命令_百度百科_files/userbar-n_93476d3.css"><link rel="stylesheet" type="text/css" href="./预处理命令_百度百科_files/larkplayer_981c735.css"><link rel="stylesheet" type="text/css" href="./预处理命令_百度百科_files/webuploader_08d9db4.css"><link rel="stylesheet" type="text/css" href="./预处理命令_百度百科_files/wiki-lemma-module_0cb5b9a.css"><link rel="stylesheet" type="text/css" href="./预处理命令_百度百科_files/announcement_cba33f4.css"><link rel="stylesheet" type="text/css" href="./预处理命令_百度百科_files/label_ca156c6.css"><link rel="stylesheet" type="text/css" href="./预处理命令_百度百科_files/sideShare_9c411cd.css"><link rel="stylesheet" type="text/css" href="./预处理命令_百度百科_files/pageMask_ff9a193.css"><link rel="stylesheet" type="text/css" href="./预处理命令_百度百科_files/mainContent_98e3702.css"><link rel="stylesheet" type="text/css" href="./预处理命令_百度百科_files/lemmaRelation_ac86a59.css"><link rel="stylesheet" type="text/css" href="./预处理命令_百度百科_files/zhixin_3b0d7a5.css"><link rel="stylesheet" type="text/css" href="./预处理命令_百度百科_files/toolButtons-n_8b4919b.css"><link rel="stylesheet" type="text/css" href="./预处理命令_百度百科_files/userInfo-n_7e90184.css"><link rel="stylesheet" type="text/css" href="./预处理命令_百度百科_files/searchHeader-n_f9a6e5b.css">    
+<script type="text/javascript">
+    alog('speed.set', 'ht', +new Date);
+</script><script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?55b574651fcae74b0a9f1cf9c8d7c93a";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script><link rel="stylesheet" href="./预处理命令_百度百科_files/share_style0_16.css"><script src="./预处理命令_百度百科_files/qc.php" type="text/javascript" charset="utf-8"></script></head>
+
+
+
+
+<body class="wiki-lemma normal"><div id="BAIDU_DUP_fp_wrapper" style="position: absolute; left: -1px; bottom: -1px; z-index: 0; width: 0px; height: 0px; overflow: hidden; visibility: hidden; display: none;"><iframe id="BAIDU_DUP_fp_iframe" src="./预处理命令_百度百科_files/o.html" style="width: 0px; height: 0px; visibility: hidden; display: none;"></iframe></div>
+
+
+<div class="header-wrapper pc-header-new">
+<div class="topbar cmn-clearfix">
+<ul class="wgt-userbar wgt-userbar-n" id="j-wgt-userbar"><li>
+<a href="http://www.baidu.com/" nslog="normal" nslog-type="10080112">百度首页</a>
+</li>
+<li class="userbar_user" data-action="showUserMenu">
+<a href="javascript:;" nslog="normal" nslog-type="10080113"><span>轻轻60530</span><i class="icon-triangle-down"></i></a>
+</li>
+<li class="userbar_message" data-action="showUserMsg">
+<a href="javascript:;" nslog="normal" nslog-type="10080115">消息<span class="userbar_message_new_num"></span><i class="icon-triangle-down"></i></a>
+</li>
+<li class="userbar_mall">
+<a href="https://baike.baidu.com/mall/" target="_blank" nslog="normal" nslog-type="10080114">商城</a>
+</li>
+</ul>
+<div class="separator"></div>
+<div class="wiki-common-headTabBar">
+<a href="https://www.baidu.com/" nslog="normal" nslog-type="10600112" data-href="https://www.baidu.com/s?ie=utf-8&amp;fr=bks0000&amp;wd=">网页</a>
+<a href="http://news.baidu.com/" nslog="normal" nslog-type="10600112" data-href="http://news.baidu.com/ns?tn=news&amp;cl=2&amp;rn=20&amp;ct=1&amp;fr=bks0000&amp;ie=utf-8&amp;word=">新闻</a>
+<a href="https://tieba.baidu.com/" nslog="normal" nslog-type="10600112" data-href="https://tieba.baidu.com/f?ie=utf-8&amp;fr=bks0000&amp;kw=">贴吧</a>
+<a href="https://zhidao.baidu.com/" nslog="normal" nslog-type="10600112" data-href="https://zhidao.baidu.com/search?pn=0&amp;&amp;rn=10&amp;lm=0&amp;fr=bks0000&amp;word=">知道</a>
+<a href="http://music.baidu.com/" nslog="normal" nslog-type="10600112" data-href="http://music.baidu.com/search?f=ms&amp;ct=134217728&amp;ie=utf-8&amp;rn=&amp;lm=-1&amp;pn=30&amp;fr=bks0000&amp;key=">音乐</a>
+<a href="http://image.baidu.com/" nslog="normal" nslog-type="10600112" data-href="http://image.baidu.com/search/index?tn=baiduimage&amp;ct=201326592&amp;lm=-1&amp;cl=2&amp;nc=1&amp;ie=utf-8&amp;word=">图片</a>
+<a href="http://v.baidu.com/" nslog="normal" nslog-type="10600112" data-href="http://v.baidu.com/v?ct=301989888&amp;rn=20&amp;pn=0&amp;db=0&amp;s=22&amp;ie=utf-8&amp;fr=bks0000&amp;word=">视频</a>
+<a href="http://map.baidu.com/" nslog="normal" nslog-type="10600112" data-href="http://map.baidu.com/m?ie=utf-8&amp;fr=bks0000&amp;word=">地图</a>
+<a href="https://wenku.baidu.com/" nslog="normal" nslog-type="10600112" data-href="https://wenku.baidu.com/search?lm=0&amp;od=0&amp;ie=utf-8&amp;fr=bks0000&amp;word=">文库</a>
+<b class="baike">百科</b>
+</div>
+</div>
+<div class="header">
+<div class="layout">
+<div class="wgt-searchbar wgt-searchbar-new wgt-searchbar-main cmn-clearfix wgt-searchbar-large">
+<div class="logo-container">
+<a class="logo cmn-inline-block" title="到百科首页" href="https://baike.baidu.com/">
+<span class="cmn-baike-logo">
+<em class="cmn-icon cmn-icons cmn-icons_logo-bai"></em>
+<em class="cmn-icon cmn-icons cmn-icons_logo-du"></em>
+<em class="cmn-icon cmn-icons cmn-icons_logo-baike"></em>
+</span>
+</a>
+</div>
+<div class="search">
+<div class="form">
+<form id="searchForm" action="https://baike.baidu.com/search/word" method="GET" target="_self">
+<input id="query" nslog="normal" nslog-type="10080011" name="word" type="text" autocomplete="off" autocorrect="off" value="预处理命令"><button id="search" nslog="normal" nslog-type="10080008" type="button">进入词条</button><button id="searchLemma" nslog="normal" nslog-type="10080009" type="button">全站搜索</button><a class="help" href="https://baike.baidu.com/help" nslog="normal" nslog-type="10080010" target="_blank">帮助</a>
+</form>
+<form id="searchLemmaForm" action="https://baike.baidu.com/search" method="GET" target="_self">
+<input id="searchLemmaQuery" name="word" type="hidden">
+<input name="pn" type="hidden" value="0">
+<input name="rn" type="hidden" value="0">
+<input name="enc" type="hidden" value="utf8">
+</form>
+<ul id="suggestion" class="suggestion">
+<div class="sug"></div>
+<li class="extra">
+<span id="clear" style="margin-right:8px;">清除历史记录</span><span id="close" nslog="normal" nslog-type="10080012">关闭</span>
+</li>
+</ul>
+</div></div>
+</div>
+<div class="declare-wrap" id="J-declare-wrap" style="display: block;">
+<div class="declare" id="J-declare">声明：百科词条人人可编辑，词条创建和修改均免费，绝不存在官方及代理商付费代编，请勿上当受骗。<a class="declare-details" target="_blank" href="https://baike.baidu.com/common/declaration">详情&gt;&gt;</a>
+<div class="close-btn" id="J-declare-close">
+<em class="cmn-icon cmn-icons cmn-icons_close"></em>
+</div>
+</div>
+</div>
+<a target="_blank" class="topA" nslog-type="10002202" nslog-params="{&quot;adId&quot;:&quot;6655&quot;, &quot;adTitle&quot;: &quot;博物馆计划-zyn2.24-25&quot;, &quot;adPos&quot;: 3}" href="https://baike.baidu.com/museum/tianjinbowuguan" title="" style="background-image:url(https://gss3.bdstatic.com/-Po3dSag_xI4khGkpoWK1HF6hhy/baike/whfpf%3D200%2C100%2C50/sign=35966a98047b02080c9c6ca104e4c0e3/d1160924ab18972b8f9742f7e8cd7b899e510a59.jpg);"></a></div>
+</div>
+</div>
+<div class="navbar-wrapper">
+<div class="wgt-navbar">
+<div class="navbar-bg">
+<div class="navbar-bg-top">
+<div class="navbar-content layout">
+<div class="navbar-content-box">
+<dl class="index ">
+<dt><a href="https://baike.baidu.com/">首页</a></dt>
+<dd>
+<div><a href="https://baike.baidu.com/calendar/" target="_blank">历史上的今天</a></div>
+<div><a href="https://baike.baidu.com/vbaike/" target="_blank">百科冷知识</a></div>
+<div><a href="https://baike.baidu.com/vbaike#gallary" target="_blank">图解百科</a></div>
+</dd>
+</dl>
+<dl class="cat ">
+<dt><a>分类</a></dt>
+<dd>
+<div><a href="https://baike.baidu.com/art" target="_blank">艺术</a></div>
+<div><a href="https://baike.baidu.com/science" target="_blank">科学</a></div>
+<div><a href="https://baike.baidu.com/ziran" target="_blank">自然</a></div>
+<div><a href="https://baike.baidu.com/wenhua" target="_blank">文化</a></div>
+<div><a href="https://baike.baidu.com/dili" target="_blank">地理</a></div>
+<div><a href="https://baike.baidu.com/shenghuo" target="_blank">生活</a></div>
+<div><a href="https://baike.baidu.com/shehui" target="_blank">社会</a></div>
+<div><a href="https://baike.baidu.com/renwu" target="_blank">人物</a></div>
+<div><a href="https://baike.baidu.com/jingji" target="_blank">经济</a></div>
+<div><a href="https://baike.baidu.com/tiyu" target="_blank">体育</a></div>
+<div><a href="https://baike.baidu.com/lishi" target="_blank">历史</a></div>
+</dd>
+</dl>
+<dl class="second-know ">
+<dt><a>秒懂百科</a></dt>
+<dd><div><a href="https://child.baidu.com/" target="_blank">秒懂少儿APP</a></div>
+<div><a href="https://baike.baidu.com/item/%E7%A7%92%E6%87%82%E6%98%9F%E8%AF%BE%E5%A0%82" target="_blank">秒懂星课堂</a></div>
+<div><a href="https://baike.baidu.com/item/%E7%A7%92%E6%87%82%E5%A4%A7%E5%B8%88%E8%AF%B4" target="_blank">秒懂大师说</a></div>
+<div><a href="https://baike.baidu.com/item/%E7%A7%92%E6%87%82%E7%9C%8B%E7%93%A6%E7%89%B9" target="_blank">秒懂看瓦特</a></div>
+<div><a href="https://baike.baidu.com/item/%E7%A7%92%E6%87%82%E4%BA%94%E5%8D%83%E5%B9%B4" target="_blank">秒懂五千年</a></div>
+<div><a href="https://baike.baidu.com/item/%E7%A7%92%E6%87%82%E5%85%A8%E8%A7%86%E7%95%8C" target="_blank">秒懂全视界</a></div>
+</dd>
+</dl>
+<dl class="special ">
+<dt><a>特色百科</a></dt>
+<dd><div><a href="https://baike.baidu.com/museum/" target="_blank">数字博物馆</a></div>
+<div><a href="https://baike.baidu.com/feiyi?fr=dhlfeiyi" target="_blank">非遗百科</a></div>
+<div><a href="https://shushuo.baidu.com/" target="_blank">百度数说</a></div>
+<div><a href="https://baike.baidu.com/city/" target="_blank">城市百科</a></div>
+<div><a href="https://baike.baidu.com/wikicategory/view?categoryName=%E6%81%90%E9%BE%99%E5%A4%A7%E5%85%A8" target="_blank">恐龙百科</a></div>
+<div><a href="https://baike.baidu.com/wikicategory/view?categoryName=%E5%A4%9A%E8%82%89%E6%A4%8D%E7%89%A9" target="_blank">多肉百科</a></div>
+</dd>
+</dl>
+<dl class="user ">
+<dt><a>用户</a></dt>
+<dd>
+<div><a href="https://baike.baidu.com/kedou/" target="_blank">蝌蚪团</a></div>
+<div><a href="https://baike.baidu.com/event/ranmeng/" target="_blank">燃梦计划</a></div>
+<div><a href="https://baike.baidu.com/task/" target="_blank">百科任务</a></div>
+<div><a href="https://baike.baidu.com/mall/" target="_blank">百科商城</a></div>
+</dd>
+</dl>
+<dl class="cooperation ">
+<dt><a>权威合作</a></dt>
+<dd>
+<div><a href="https://baike.baidu.com/operation/cooperation#joint" target="_blank">合作模式</a></div>
+<div><a href="https://baike.baidu.com/operation/cooperation#issue" target="_blank">常见问题</a></div>
+<div><a href="https://baike.baidu.com/operation/cooperation#connection" target="_blank">联系方式</a></div>
+</dd>
+</dl>
+<div class="usercenter">
+<div><a href="https://baike.baidu.com/usercenter" target="_blank"><em class="cmn-icon cmn-icons cmn-icons_navbar-usercenter"></em>个人中心</a></div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="body-wrapper">
+<div class="before-content">
+</div>
+<div class="content-wrapper">
+<div class="content">
+<div class="personal-content">
+</div>
+<div class="main-content">
+<div class="top-tool">
+<a class="add-sub-icon top-tool-icon" href="javascript:;" title="添加义项" nslog-type="50000101" style="display: inline-block;">
+<em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_add-subLemma-solid"></em>
+</a>
+<a href="https://baike.baidu.com/divideload/%E9%A2%84%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4" title="拆分词条" target="_blank" class="split-icon top-tool-icon" style="display:none;" nslog-type="50000104">
+<em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_lemma-split"></em>
+</a>
+<div class="top-collect top-tool-icon" nslog="area" nslog-type="50000102">
+<em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_star-solid"></em>
+<span class="collect-text">收藏</span>
+<div class="collect-tip" style="display: none;">查看<a href="https://baike.baidu.com/uc/favolemma" target="_blank">我的收藏</a></div>
+</div>
+<a href="javascript:void(0);" id="j-top-vote" class="top-vote top-tool-icon" nslog-type="10060801">
+<em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_zan-solid"></em>
+<span class="vote-count">326</span>
+<span class="vote-tip">有用+1</span>
+<span class="voted-tip">已投票</span>
+</a><div class="bksharebuttonbox top-share">
+<a class="top-share-icon top-tool-icon" nslog-type="9067">
+<em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_share"></em>
+<span class="share-count" id="j-topShareCount">15</span>
+</a>
+<div class="new-top-share" id="top-share">
+<ul class="top-share-list">
+<li class="top-share-item">
+<a class="share-link bds_qzone" href="javascript:void(0);" nslog-type="10060501">
+<em class="cmn-icon cmn-icons cmn-icons_logo-qzone"></em>
+</a>
+</li>
+<li class="top-share-item">
+<a class="share-link bds_tsina" href="javascript:void(0);" nslog-type="10060701">
+<em class="cmn-icon cmn-icons cmn-icons_logo-sina-weibo"></em>
+</a>
+</li>
+<li class="top-share-item">
+<a class="bds_wechat" href="javascript:void(0);" nslog-type="10060401">
+<em class="cmn-icon cmn-icons cmn-icons_logo-wechat"></em>
+</a>
+</li>
+<li class="top-share-item">
+<a class="share-link bds_tqq" href="javascript:void(0);" nslog-type="10060601">
+<em class="cmn-icon cmn-icons cmn-icons_logo-qq"></em>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div style="width:0;height:0;clear:both"></div><dl class="lemmaWgt-lemmaTitle lemmaWgt-lemmaTitle-">
+<dd class="lemmaWgt-lemmaTitle-title">
+<h1>预处理命令</h1>
+<a href="javascript:;" class="edit-lemma cmn-btn-hover-blue cmn-btn-28 j-edit-link" style="display: inline-block;"><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_edit-lemma"></em>编辑</a>
+<a class="lock-lemma" nslog-type="10003105" target="_blank" href="javascript:;" title="锁定"><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_lock-lemma"></em>锁定</a>
+<a href="https://baike.baidu.com/planet/talk?lemmaId=10204389" target="_blank" class="lemma-discussion cmn-btn-hover-blue cmn-btn-28 j-discussion-link" nslog-type="90000102"><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_discussion-solid"></em>讨论<span class="num">999</span></a>
+</dd>
+</dl><div class="edit-prompt">本词条缺少<strong>概述图</strong>，补充相关内容使词条更完整，还能快速升级，赶紧来<a class="edit-prompt-link j-edit-link">编辑</a>吧！</div>
+<div class="promotion-declaration">
+</div><div class="lemma-summary" label-module="lemmaSummary">
+<div class="para" label-module="para">程序设计语言的预处理的概念：在编译之前进行的处理。 C语言的预处理主要有三个方面的内容： 1.<a target="_blank" href="https://baike.baidu.com/item/%E5%AE%8F%E5%AE%9A%E4%B9%89/8711494" data-lemmaid="8711494">宏定义</a>； 2.<a target="_blank" href="https://baike.baidu.com/item/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/18707044" data-lemmaid="18707044">文件包含</a>； 3.<a target="_blank" href="https://baike.baidu.com/item/%E6%9D%A1%E4%BB%B6%E7%BC%96%E8%AF%91/7692959" data-lemmaid="7692959">条件编译</a>。 预处理命令以符号“#”开头。</div>
+</div>
+<div class="configModuleBanner">
+</div><div class="basic-info cmn-clearfix">
+<dl class="basicInfo-block basicInfo-left">
+<dt class="basicInfo-item name">中文名</dt>
+<dd class="basicInfo-item value">
+预处理命令
+</dd>
+<dt class="basicInfo-item name">概&nbsp;&nbsp;&nbsp;&nbsp;念</dt>
+<dd class="basicInfo-item value">
+程序设计语言的预处理
+</dd>
+</dl><dl class="basicInfo-block basicInfo-right">
+<dt class="basicInfo-item name">符&nbsp;&nbsp;&nbsp;&nbsp;号</dt>
+<dd class="basicInfo-item value">
+“#”开头
+</dd>
+<dt class="basicInfo-item name">格&nbsp;&nbsp;&nbsp;&nbsp;式</dt>
+<dd class="basicInfo-item value">
+<a target="_blank" href="https://baike.baidu.com/item/%23define">#define</a><a target="_blank" href="https://baike.baidu.com/item/%E6%A0%87%E8%AF%86%E7%AC%A6">标识符</a>&nbsp;字符串（宏定义）
+</dd>
+</dl></div>
+<div class="lemmaWgt-lemmaCatalog">
+<div class="lemma-catalog">
+<h2 class="block-title">目录</h2>
+<div class="catalog-list column-1">
+<ol>
+<li class="level1">
+<span class="index">1</span>
+<span class="text"><a href="https://baike.baidu.com/item/%E9%A2%84%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4/10204389?fr=aladdin#1">宏定义</a></span>
+</li>
+<li class="level1">
+<span class="index">2</span>
+<span class="text"><a href="https://baike.baidu.com/item/%E9%A2%84%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4/10204389?fr=aladdin#2">文件包含</a></span>
+</li>
+<li class="level1">
+<span class="index">3</span>
+<span class="text"><a href="https://baike.baidu.com/item/%E9%A2%84%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4/10204389?fr=aladdin#3">条件编译</a></span>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="anchor-list">
+<a name="1" class="lemma-anchor para-title"></a>
+<a name="sub1334643_1" class="lemma-anchor "></a>
+<a name="宏定义" class="lemma-anchor "></a>
+</div><div class="para-title level-2" label-module="para-title">
+<h2 class="title-text"><span class="title-prefix">预处理命令</span>宏定义</h2>
+<a class="edit-icon j-edit-link" data-edit-dl="1" href="javascript:;" style="display: block;"><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_edit-lemma"></em>编辑</a>
+</div>
+<div class="para" label-module="para">1.不带参数的宏定义：</div>
+<div class="para" label-module="para"><a target="_blank" href="https://baike.baidu.com/item/%E5%AE%8F%E5%AE%9A%E4%B9%89">宏定义</a>又称为宏代换、宏替换，简称“宏”。</div>
+<div class="para" label-module="para">格式：</div>
+<div class="para" label-module="para"><a target="_blank" href="https://baike.baidu.com/item/%23define">#define</a><a target="_blank" href="https://baike.baidu.com/item/%E6%A0%87%E8%AF%86%E7%AC%A6">标识符</a>文本</div>
+<div class="para" label-module="para">其中的标识符就是所谓的<a target="_blank" href="https://baike.baidu.com/item/%E7%AC%A6%E5%8F%B7%E5%B8%B8%E9%87%8F">符号常量</a>，也称为“宏名”。</div>
+<div class="para" label-module="para">预处理（<a target="_blank" href="https://baike.baidu.com/item/%E9%A2%84%E7%BC%96%E8%AF%91">预编译</a>）工作也叫做宏展开：将宏名替换为文本（这个文本可以是字符串、可以是代码等）。</div>
+<div class="para" label-module="para">掌握"宏"概念的关键是“换”。一切以换为前提、做任何事情之前先要换，准确理解之前就要“换”。</div>
+<div class="para" label-module="para">即在对相关命令或语句的含义和功能作具体分析之前就要换：</div>
+<div class="para" label-module="para">例：</div>
+<div class="para" label-module="para">#define PI 3.1415926</div>
+<div class="para" label-module="para">把程序中全部的标识符PI换成3.1415926</div>
+<div class="para" label-module="para">说明：</div>
+<div class="para" label-module="para">（1）宏名一般用大写</div>
+<div class="para" label-module="para">（2）使用宏可提高程序的通用性和易读性，减少不一致性，减少输入错误和便于修改。例如：<a target="_blank" href="https://baike.baidu.com/item/%E6%95%B0%E7%BB%84">数组</a>大小常用<a target="_blank" href="https://baike.baidu.com/item/%E5%AE%8F%E5%AE%9A%E4%B9%89">宏定义</a></div>
+<div class="para" label-module="para">（3）可以用#undef命令终止宏定义的<a target="_blank" href="https://baike.baidu.com/item/%E4%BD%9C%E7%94%A8%E5%9F%9F">作用域</a></div>
+<div class="para" label-module="para">（4）宏定义可以嵌套</div>
+<div class="para" label-module="para">2.带参数的宏：</div>
+<div class="para" label-module="para">除了一般的字符串替换，还要做参数代换</div>
+<div class="para" label-module="para">格式：</div>
+<div class="para" label-module="para"><a target="_blank" href="https://baike.baidu.com/item/%23define">#define</a> 宏名（参数表）文本</div>
+<div class="para" label-module="para">例如：#define S(a,b) a*b</div>
+<div class="para" label-module="para">area=S(3,2)；第一步被换为area=a*b; ，第二步被换为area=3*2;</div>
+<div class="para" label-module="para">类似于<a target="_blank" href="https://baike.baidu.com/item/%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8">函数调用</a>，有一个哑实结合的过程：</div>
+<div class="para" label-module="para">（1）<a target="_blank" href="https://baike.baidu.com/item/%E5%AE%9E%E5%8F%82">实参</a>如果是<a target="_blank" href="https://baike.baidu.com/item/%E8%A1%A8%E8%BE%BE%E5%BC%8F">表达式</a>容易出问题</div>
+<div class="para" label-module="para">#define S(r) r*r</div>
+<div class="para" label-module="para">area=S(a+b);第一步换为area=r*r;,第二步被换为area=a+b*a+b;</div>
+<div class="para" label-module="para">正确的<a target="_blank" href="https://baike.baidu.com/item/%E5%AE%8F%E5%AE%9A%E4%B9%89">宏定义</a>是<a target="_blank" href="https://baike.baidu.com/item/%23define">#define</a> S(r) ((r)*(r))</div>
+<div class="para" label-module="para">（2）宏名和参数的括号间不能有空格</div>
+<div class="para" label-module="para">（3）宏替换只作替换，不做计算，不做表达式求解</div>
+<div class="para" label-module="para">（4）函数调用在编译后程序运行时进行，并且分配内存。宏替换在编译前进行，不分配内存</div>
+<div class="para" label-module="para">（5）宏的哑实结合不存在类型，也没有类型转换。</div>
+<div class="para" label-module="para">（6）宏展开使源程序变长，<a target="_blank" href="https://baike.baidu.com/item/%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8">函数调用</a>不会</div>
+<div class="para" label-module="para">（7）宏展开不占运行时间，只占<a target="_blank" href="https://baike.baidu.com/item/%E7%BC%96%E8%AF%91%E6%97%B6%E9%97%B4">编译时间</a>，函数调用占运行时间（分配内存、保留现场、值传递、返回值）</div><div class="anchor-list">
+<a name="2" class="lemma-anchor para-title"></a>
+<a name="sub1334643_2" class="lemma-anchor "></a>
+<a name="文件包含" class="lemma-anchor "></a>
+</div><div class="para-title level-2" label-module="para-title">
+<h2 class="title-text"><span class="title-prefix">预处理命令</span>文件包含</h2>
+<a class="edit-icon j-edit-link" data-edit-dl="2" href="javascript:;" style="display: block;"><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_edit-lemma"></em>编辑</a>
+</div>
+<div class="para" label-module="para">一个文件包含另一个文件的内容</div>
+<div class="para" label-module="para">格式：</div>
+<div class="para" label-module="para">#include "文件名"</div>
+<div class="para" label-module="para">或</div>
+<div class="para" label-module="para">#include &lt;<a target="_blank" href="https://baike.baidu.com/item/%E6%96%87%E4%BB%B6%E5%90%8D">文件名</a>&gt;</div>
+<div class="para" label-module="para">编译时以包含处理以后的文件为编译单位，被包含的文件是<a target="_blank" href="https://baike.baidu.com/item/%E6%BA%90%E6%96%87%E4%BB%B6">源文件</a>的一部分。</div>
+<div class="para" label-module="para">编译以后只得到一个目标文件.obj</div>
+<div class="para" label-module="para">被包含的文件又被称为“标题文件”或“头部文件”、“<a target="_blank" href="https://baike.baidu.com/item/%E5%A4%B4%E6%96%87%E4%BB%B6">头文件</a>”，并且常用.h作扩展名。</div>
+<div class="para" label-module="para">修改头文件后所有包含该文件的文件都要重新编译</div>
+<div class="para" label-module="para">头文件的内容除了函数原型和<a target="_blank" href="https://baike.baidu.com/item/%E5%AE%8F%E5%AE%9A%E4%B9%89">宏定义</a>外，还可以有<a target="_blank" href="https://baike.baidu.com/item/%E7%BB%93%E6%9E%84%E4%BD%93">结构体</a>定义，<a target="_blank" href="https://baike.baidu.com/item/%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F">全局变量</a>定义：</div>
+<div class="para" label-module="para">（1）一个#include命令指定一个头文件；</div>
+<div class="para" label-module="para">（2）文件1包含文件2，文件2用到文件3，则文件3的包含命令#include应放在文件1的头部第一行；</div>
+<div class="para" label-module="para">（3）包含可以嵌套；</div>
+<div class="para" label-module="para">（4）&lt;文件名&gt;称为标准方式，系统到头<a target="_blank" href="https://baike.baidu.com/item/%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95">文件目录</a>查找文件，</div>
+<div class="para" label-module="para">"文件名"则先在当前目录查找，而后到头文件目录查找；</div>
+<div class="para" label-module="para">（5）被包含文件中的静态全局变量不用在包含文件中声明。</div><div class="anchor-list">
+<a name="3" class="lemma-anchor para-title"></a>
+<a name="sub1334643_3" class="lemma-anchor "></a>
+<a name="条件编译" class="lemma-anchor "></a>
+</div><div class="para-title level-2" label-module="para-title">
+<h2 class="title-text"><span class="title-prefix">预处理命令</span>条件编译</h2>
+<a class="edit-icon j-edit-link" data-edit-dl="3" href="javascript:;" style="display: block;"><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_edit-lemma"></em>编辑</a>
+</div>
+<div class="para" label-module="para">有些语句希望在条件满足时才编译。</div>
+<div class="para" label-module="para">格式：（1）</div>
+<div class="para" label-module="para">#ifdef <a target="_blank" href="https://baike.baidu.com/item/%E6%A0%87%E8%AF%86%E7%AC%A6">标识符</a></div>
+<div class="para" label-module="para"><a target="_blank" href="https://baike.baidu.com/item/%E7%A8%8B%E5%BA%8F%E6%AE%B5">程序段</a>1</div>
+<div class="para" label-module="para">#else</div>
+<div class="para" label-module="para">程序段2</div>
+<div class="para" label-module="para">#endif</div>
+<div class="para" label-module="para">或</div>
+<div class="para" label-module="para">#ifdef</div>
+<div class="para" label-module="para">程序段1</div>
+<div class="para" label-module="para">#endif</div>
+<div class="para" label-module="para">当标识符已经定义时，程序段1才参加编译。</div>
+<div class="para" label-module="para">格式：（2）</div>
+<div class="para" label-module="para"><a target="_blank" href="https://baike.baidu.com/item/%23ifndef">#ifndef</a> 标识符</div>
+<div class="para" label-module="para">#define 标识1</div>
+<div class="para" label-module="para">程序段1</div>
+<div class="para" label-module="para">#endif</div>
+<div class="para" label-module="para">如果标识符没有被定义，则重定义标识1，且执行程序段1。</div>
+<div class="para" label-module="para">格式：（3）</div>
+<div class="para" label-module="para">#if <a target="_blank" href="https://baike.baidu.com/item/%E8%A1%A8%E8%BE%BE%E5%BC%8F">表达式</a>1</div>
+<div class="para" label-module="para">程序段1</div>
+<div class="para" label-module="para">#elif 表达式2</div>
+<div class="para" label-module="para">程序段2</div>
+<div class="para" label-module="para">……</div>
+<div class="para" label-module="para">#elif 表达式n</div>
+<div class="para" label-module="para">程序段n</div>
+<div class="para" label-module="para">#else</div>
+<div class="para" label-module="para">程序段n+1</div>
+<div class="para" label-module="para">#endif</div>
+<div class="para" label-module="para">当表达式1成立时，<a target="_blank" href="https://baike.baidu.com/item/%E7%BC%96%E8%AF%91%E7%A8%8B%E5%BA%8F">编译程序</a>段1，当不成立时，编译程序段2。</div>
+<div class="para" label-module="para">使用<a target="_blank" href="https://baike.baidu.com/item/%E6%9D%A1%E4%BB%B6%E7%BC%96%E8%AF%91">条件编译</a>可以使<a target="_blank" href="https://baike.baidu.com/item/%E7%9B%AE%E6%A0%87%E7%A8%8B%E5%BA%8F">目标程序</a>变小，运行时间变短。</div>
+<div class="para" label-module="para"><a target="_blank" href="https://baike.baidu.com/item/%E9%A2%84%E7%BC%96%E8%AF%91">预编译</a>使问题或算法的解决方案增多，有助于我们选择合适的解决方案。</div>
+<div class="para" label-module="para">此外，还有布局控制：#pragma，这也是我们应用预处理的一个重要方面，主要功能是为编译程序提供非常规的<a target="_blank" href="https://baike.baidu.com/item/%E6%8E%A7%E5%88%B6%E6%B5%81">控制流</a>信息。</div>
+<div id="open-tag">
+<div class="open-tag-title">词条标签：</div>
+<dd id="open-tag-item">
+<span class="taglist">
+科学
+</span>
+，<span class="taglist">
+学科
+</span>
+</dd>
+<div class="open-tag-collapse" id="open-tag-collapse" style="display: none;"></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="side-content">
+<div class="lemmaWgt-promotion-vbaike" style="display: block;">
+<div class="promotion_title">V百科<a href="https://baike.baidu.com/vbaike#gallary" target="_blank">往期回顾</a></div>
+<div class="promotion_viewport">
+<dl style="position: absolute; width: 536px; height: 152px; left: 0px;"><dd class="wgt_carousel_aniUnit" style="float: left;">
+<a href="https://baike.baidu.com/vbaike/%E8%A7%A3%E8%AF%BB%E7%BB%BC%E8%89%BA%E2%80%9C%E7%9C%9F%E4%BA%BA%E7%A7%80%E2%80%9D/25858" target="_blank" title="--" nslog-type="10002202" nslog-params="{&quot;adId&quot;:&quot;6659&quot;, &quot;adTitle&quot;:&quot;解读综艺“真人秀”&quot;, &quot;adPos&quot;: 1}">
+<img src="./预处理命令_百度百科_files/960a304e251f95ca3daf198ec7177f3e670952b4.jpg">
+</a>
+</dd><dd class="wgt_carousel_aniUnit" style="float: left;">
+<a href="https://baike.baidu.com/vbaike/%E9%9B%AA%E5%A4%A9%E8%A7%84%E8%8C%83%E8%A1%8C%E9%A9%B6/25836" target="_blank" title="--" nslog-type="10002202" nslog-params="{&quot;adId&quot;:&quot;6660&quot;, &quot;adTitle&quot;:&quot;雪天规范行驶&quot;, &quot;adPos&quot;: 1}">
+<img src="https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/whfpf%3D268%2C152%2C50/sign=93612ee778c6a7efb973fb669bc79d67/91529822720e0cf3a3bac5c30446f21fbe09aabd.jpg">
+</a>
+</dd></dl>
+<div class="promotion_viewport_pager wgt_horPager">
+<span class="pTagBox">
+<a href="javascript:;" class="pTag prev" p-index="3"><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_arrow-left"></em></a>
+<a href="javascript:;" class="pTag next" p-index="5"><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_arrow-right"></em></a>
+</span>
+</div>
+</div>
+</div><div class="lemmaWgt-promotion-rightPreciseAd" data-lemmaid="10204389" data-lemmatitle="预处理命令"></div>
+<div class="lemmaWgt-promotion-slide" style="display: block;">
+<div class="promotion_viewport">
+<dl style="position: absolute; width: 540px; height: 260px; left: 0px;"><dd class="wgt_carousel_aniUnit" style="float: left;">
+<a href="https://baike.baidu.com/vbaike/%E5%8C%97%E4%BA%AC%E6%97%85%E6%B8%B8%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%8F%91%E5%B8%83/25788" target="_blank" title="--" nslog-type="10002202" nslog-params="{&quot;adId&quot;:&quot;6630&quot;, &quot;adTitle&quot;:&quot;数说北京旅游大数据-sws&quot;, &quot;adPos&quot;: 2}">
+<img src="./预处理命令_百度百科_files/旅游大数据推广位.png">
+</a>
+</dd><dd class="wgt_carousel_aniUnit" style="float: left;">
+<a href="https://baike.baidu.com/wikisecond/videoflow?lemmaId=739020&amp;secondId=554580" target="_blank" title="--" nslog-type="10002202" nslog-params="{&quot;adId&quot;:&quot;5482&quot;, &quot;adTitle&quot;:&quot;（热点长期）第91届奥斯卡&quot;, &quot;adPos&quot;: 2}">
+<img src="https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/whfpf%3D270%2C150%2C50/sign=3f8df8cba9efce1bea7e9b8ac96cc1e9/6a600c338744ebf8b52edf02d7f9d72a6059a7b4.jpg">
+</a>
+</dd></dl>
+<div class="promotion_viewport_pager wgt_horPager"><span class="pTagBox">
+<a href="javascript:;" class="pTag prev" p-index="1"><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_arrow-left"></em></a><span><a href="javascript:;" class="dot pTag" p-index="1"><em class="cmn-icon cmn-icons cmn-icons_userbar-new"></em></a><a href="javascript:;" class="dot pTag cur"><em class="cmn-icon cmn-icons cmn-icons_userbar-new"></em></a><a href="javascript:;" class="dot pTag" p-index="3"><em class="cmn-icon cmn-icons cmn-icons_userbar-new"></em></a><a href="javascript:;" class="dot pTag" p-index="4"><em class="cmn-icon cmn-icons cmn-icons_userbar-new"></em></a></span><a href="javascript:;" class="pTag next" p-index="3"><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_arrow-right"></em></a>
+</span></div>
+</div>
+</div><div class="lemmaWgt-promotion-rightBigAd">
+</div><dl class="side-box lemma-statistics">
+<dt class="title">词条统计</dt>
+<dd class="description ">
+<ul>
+<li>浏览次数：<span id="j-lemmaStatistics-pv">119999</span>次</li>
+<li>编辑次数：21次<a href="https://baike.baidu.com/historylist/%E9%A2%84%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4/10204389" class="nslog:1021" target="_blank">历史版本</a></li>
+<li>
+<span class="latest-title">最近更新：</span>
+<span class="latest-content">
+<a class="show-userCard" data-uid="11995809" title="查看此用户资料" target="_blank" href="http://www.baidu.com/p/w_ou" nslog-type="1022">w_ou</a><span class="j-modified-time" style="">（2018-08-14）</span>
+</span>
+</li>
+</ul>
+</dd>
+</dl>
+<div class="side-catalog" style="visibility: hidden; bottom: 10px;">
+<div class="side-bar">
+<em class="circle start"></em>
+<em class="circle end"></em>
+</div>
+<div class="catalog-scroller">
+<dl class="catalog-list">
+<dt class="catalog-title level1">
+<em class="pointer"></em>
+<a href="https://baike.baidu.com/item/%E9%A2%84%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4/10204389?fr=aladdin#1" class="title-link">
+<span class="text">
+<span class="title-index">1</span>
+<span class="title-link" nslog-type="10002802">宏定义</span>
+</span>
+</a>
+</dt>
+<dt class="catalog-title level1">
+<em class="pointer"></em>
+<a href="https://baike.baidu.com/item/%E9%A2%84%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4/10204389?fr=aladdin#2" class="title-link">
+<span class="text">
+<span class="title-index">2</span>
+<span class="title-link" nslog-type="10002802">文件包含</span>
+</span>
+</a>
+</dt>
+<dt class="catalog-title level1">
+<em class="pointer"></em>
+<a href="https://baike.baidu.com/item/%E9%A2%84%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4/10204389?fr=aladdin#3" class="title-link">
+<span class="text">
+<span class="title-index">3</span>
+<span class="title-link" nslog-type="10002802">条件编译</span>
+</span>
+</a>
+</dt>
+<a class="arrow" href="javascript:void(0);" style="top: 5px;"></a>
+</dl>
+</div>
+<div class="right-wrap" style="display: none;">
+<a class="go-up disable" href="javascript:void(0);"></a>
+<a class="go-down disable" href="javascript:void(0);"></a>
+</div>
+<div class="bottom-wrap">
+<a class="toggle-button" href="javascript:void(0);" nslog-type="10002803"></a>
+<a class="gotop-button" href="javascript:void(0);" nslog-type="10002804"></a>
+</div>
+</div>
+
+<div id="side_box_unionAd" class="unionAd side-box union" style="display: block;">
+<div class="union-content" id="cpro_u1997633"><iframe id="iframeu1997633_0" name="iframeu1997633_0" src="./预处理命令_百度百科_files/lcfm.html" width="250" height="250" align="center,center" vspace="0" hspace="0" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" style="border:0;vertical-align:bottom;margin:0;width:250px;height:250px" allowtransparency="true"></iframe></div>
+</div>
+</div>
+</div>
+</div>
+<div class="after-content">
+<div class="fc-guess-like new" id="fc_guess_like_new" style="display: block;">
+<span class="logo-du">
+<em class="cmn-icon cmn-icons cmn-icons_logo-du"></em>
+</span>
+<h6>猜你关注</h6>
+<ul class="cmn-clearfix"><li><a href="https://www.baidu.com/s?wd=%CE%F7%B5%E3%C5%E0%D1%B5&amp;tn=SE_baikepcxf02_fcetbk02&amp;lqsource=-1&amp;dmaseid=dmaseid202&amp;qid=fb55d2f2451f2297" target="_blank">西点培训</a></li>
+<li><a href="https://www.baidu.com/s?wd=%CC%F0%C6%B7%C6%B7%C5%C6%C5%C5%D0%D0%B0%F1&amp;tn=SE_baikepcxf02_fcetbk02&amp;lqsource=-1&amp;dmaseid=dmaseid202&amp;qid=fb55d2f2451f2297" target="_blank">甜品品牌排行榜</a></li>
+<li><a href="https://www.baidu.com/s?wd=%D1%F9%C6%B7%D4%A4%B4%A6%C0%ED&amp;tn=SE_baikepcxf02_fcetbk02&amp;lqsource=0&amp;dmaseid=dmaseid202&amp;qid=fb55d2f2451f2297" target="_blank">样品预处理</a></li>
+<li><a href="https://www.baidu.com/s?wd=%CB%AE%B5%C4%B4%A6%C0%ED%B7%BD%B7%A8&amp;tn=SE_baikepcxf02_fcetbk02&amp;lqsource=-1&amp;dmaseid=dmaseid202&amp;qid=fb55d2f2451f2297" target="_blank">水的处理方法</a></li>
+<li><a href="https://www.baidu.com/s?wd=%C8%E7%BA%CE%BF%AA%D2%BB%B8%F6%B1%E3%C0%FB%B5%EA&amp;tn=SE_baikepcxf02_fcetbk02&amp;lqsource=-1&amp;dmaseid=dmaseid202&amp;qid=fb55d2f2451f2297" target="_blank">如何开一个便利店</a></li>
+<li><a href="https://www.baidu.com/s?wd=%C8%E7%BA%CE%BF%AA%B1%E3%C0%FB%B5%EA&amp;tn=SE_baikepcxf02_fcetbk02&amp;lqsource=-1&amp;dmaseid=dmaseid202&amp;qid=fb55d2f2451f2297" target="_blank">如何开便利店</a></li>
+<li><a href="https://www.baidu.com/s?wd=%C8%E7%BA%CE%BF%AA%D2%BB%B1%E3%C0%FB%B5%EA&amp;tn=SE_baikepcxf02_fcetbk02&amp;lqsource=-1&amp;dmaseid=dmaseid202&amp;qid=fb55d2f2451f2297" target="_blank">如何开一便利店</a></li>
+<li><a href="https://www.baidu.com/s?wd=%CC%F0%B5%E3%B5%EA%C5%C5%C3%FB&amp;tn=SE_baikepcxf02_fcetbk02&amp;lqsource=-1&amp;dmaseid=dmaseid202&amp;qid=fb55d2f2451f2297" target="_blank">甜点店排名</a></li>
+<li><a href="https://www.baidu.com/s?wd=%F6%CF%D3%E3%CB%BF%B6%E0%C9%D9%C7%AE%D2%BB%BD%EF&amp;tn=SE_baikepcxf02_fcetbk02&amp;lqsource=-1&amp;dmaseid=dmaseid202&amp;qid=fb55d2f2451f2297" target="_blank">鱿鱼丝多少钱一斤</a></li>
+<li><a href="https://www.baidu.com/s?wd=%BF%BE%D1%BC%C1%AC%CB%F8%B5%EA&amp;tn=SE_baikepcxf02_fcetbk02&amp;lqsource=-1&amp;dmaseid=dmaseid202&amp;qid=fb55d2f2451f2297" target="_blank">烤鸭连锁店</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="wgt-footer-main">
+<div class="content">
+<dl class="fresh">
+<dt><em class="cmn-icon cmn-icons cmn-icons_footer-fresh"></em>新手上路</dt>
+<dd>
+<div><a target="_blank" href="https://baike.baidu.com/usercenter/tasks#guide">成长任务</a></div>
+<div><a target="_blank" href="https://baike.baidu.com/help#main01">编辑入门</a></div>
+<div><a target="_blank" href="https://baike.baidu.com/help#main06">编辑规则</a></div>
+<div><a target="_blank" href="https://baike.baidu.com/item/%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91%EF%BC%9A%E6%9C%AC%E4%BA%BA%E8%AF%8D%E6%9D%A1%E7%BC%96%E8%BE%91%E6%9C%8D%E5%8A%A1/22442459?bk_fr=pcFooter">本人编辑</a><img src="./预处理命令_百度百科_files/new-icon_a64774d.png" class="new-icon" alt="new"></div>
+</dd>
+</dl>
+<dl class="question">
+<dt><em class="cmn-icon cmn-icons cmn-icons_footer-question"></em>我有疑问</dt>
+<dd>
+<div><a id="J-bk-feedback-query" data-lemma="预处理命令" href="javascript:void(0);" nslog-type="10070001">内容质疑</a></div>
+<div><a target="_blank" href="http://zhiqiu.baidu.com/baike/passport/html/baikechat.html" nslog-type="10000003">在线客服</a></div>
+<div><a target="_blank" href="http://tieba.baidu.com/f?ie=utf-8&amp;fr=bks0000&amp;kw=%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91">官方贴吧</a></div>
+<div><a id="J-bk-feedback-main" href="javascript:void(0);">意见反馈</a></div>
+</dd>
+</dl>
+<dl class="suggestion">
+<dt><em class="cmn-icon cmn-icons cmn-icons_footer-suggestion"></em>投诉建议</dt>
+<dd>
+<div><a target="_blank" href="http://help.baidu.com/newadd?word=%E9%A2%84%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4&amp;&amp;submit_link=https%3A%2F%2Fbaike.baidu.com%2Fitem%2F%25E9%25A2%2584%25E5%25A4%2584%25E7%2590%2586%25E5%2591%25BD%25E4%25BB%25A4%2F10204389%3Ffr%3Daladdin&amp;prod_id=10&amp;category=1">举报不良信息</a></div>
+<div><a target="_blank" href="http://help.baidu.com/newadd?word=%E9%A2%84%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4&amp;&amp;submit_link=https%3A%2F%2Fbaike.baidu.com%2Fitem%2F%25E9%25A2%2584%25E5%25A4%2584%25E7%2590%2586%25E5%2591%25BD%25E4%25BB%25A4%2F10204389%3Ffr%3Daladdin&amp;prod_id=10&amp;category=2">未通过词条申诉</a></div>
+<div><a target="_blank" href="http://help.baidu.com/newadd?word=%E9%A2%84%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4&amp;&amp;submit_link=https%3A%2F%2Fbaike.baidu.com%2Fitem%2F%25E9%25A2%2584%25E5%25A4%2584%25E7%2590%2586%25E5%2591%25BD%25E4%25BB%25A4%2F10204389%3Ffr%3Daladdin&amp;prod_id=10&amp;category=6">投诉侵权信息</a></div>
+<div><a target="_blank" href="http://help.baidu.com/newadd?word=%E9%A2%84%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4&amp;&amp;submit_link=https%3A%2F%2Fbaike.baidu.com%2Fitem%2F%25E9%25A2%2584%25E5%25A4%2584%25E7%2590%2586%25E5%2591%25BD%25E4%25BB%25A4%2F10204389%3Ffr%3Daladdin&amp;prod_id=10&amp;category=5">封禁查询与解封</a></div>
+</dd>
+</dl>
+</div>
+<div class="copyright">©2019&nbsp;Baidu&nbsp;<a href="http://www.baidu.com/duty/" target="_blank">使用百度前必读</a>&nbsp;|&nbsp;<a href="http://help.baidu.com/question?prod_en=baike&amp;class=89&amp;id=1637" target="_blank">百科协议</a>&nbsp;|&nbsp;<a href="http://help.baidu.com/question?prod_id=10&amp;class=690&amp;id=1001779" target="_blank">隐私政策</a>&nbsp;|&nbsp;<a href="https://baike.baidu.com/operation/cooperation" target="_blank">百度百科合作平台</a>&nbsp;|&nbsp;<span>京ICP证030173号&nbsp;</span><img class="copyright-img" width="13" height="16" src="./预处理命令_百度百科_files/copy_rignt_24.png"></div>
+<p class="recordcode"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001" target="_blank"><i class="icon-police"></i>京公网安备11000002000001号</a></p>
+</div>
+
+
+<div class="lemmaWgt-searchHeader">
+<div class="layout cmn-clearfix">
+<div class="wgt-searchbar wgt-searchbar-new wgt-searchbar-simple cmn-clearfix ">
+<div class="logo-container">
+<a class="logo cmn-inline-block" title="到百科首页" href="https://baike.baidu.com/">
+<span class="cmn-baike-logo">
+<em class="cmn-icon cmn-icons cmn-icons_logo-bai"></em>
+<em class="cmn-icon cmn-icons cmn-icons_logo-du"></em>
+<em class="cmn-icon cmn-icons cmn-icons_logo-baike"></em>
+</span>
+</a>
+</div>
+<div class="search">
+<div class="form">
+<form id="searchForm" action="https://baike.baidu.com/search/word" method="GET" target="_self">
+<input id="query" nslog="normal" nslog-type="10080015" name="word" type="text" autocomplete="off" autocorrect="off" value="预处理命令"><button id="search" nslog="normal" nslog-type="10080013" type="button">进入词条</button>
+</form>
+<form id="searchLemmaForm" action="https://baike.baidu.com/search" method="GET" target="_self">
+<input id="searchLemmaQuery" name="word" type="hidden">
+<input name="pn" type="hidden" value="0">
+<input name="rn" type="hidden" value="0">
+<input name="enc" type="hidden" value="utf8">
+</form>
+<ul id="suggestion" class="suggestion">
+<div class="sug"></div>
+<li class="extra">
+<span id="clear" style="margin-right:8px;">清除历史记录</span><span id="close" nslog="normal" nslog-type="10080016">关闭</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="tool-buttons">
+<a class="toolButtons-edit button j-edit-link" href="javascript:;" nslog-type="10010001"><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_edit-hollow"></em>编辑</a>
+<a class="toolButtons-discussion button j-discussion-link" href="https://baike.baidu.com/planet/talk?lemmaId=10204389" target="_blank" nslog-type="90000103"><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_discussion-hollow"></em>讨论&nbsp;<span class="num">66</span></a>
+<a class="toolButtons-collect button" href="javascript:;" nslog-type="10010002"><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_star-hollow"></em><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_star-solid"></em>收藏</a>
+<a class="toolButtons-vote button top-vote" href="javascript:;" nslog-type="10010003"><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_zan-hollow"></em><em class="cmn-icon wiki-lemma-icons wiki-lemma-icons_zan-solid"></em><span class="j-tool-btn-vote-num">赞</span></a>
+</div>
+<div class="user-info">
+<a class="user-link unlogin" href="https://baike.baidu.com/usercenter" nslog-type="10010008" target="_blank">轻轻60530</a>
+</div>
+</div></div>
+<div class="new-bdsharebuttonbox new-side-share" id="side-share">
+<span class="title">分享</span>
+<div class="side-border">
+<div class="triangle"></div>
+<a class="share-link bds_qzone" href="javascript:void(0);" nslog-type="10060101">
+<em class="cmn-icon cmn-icons cmn-icons_logo-qzone"></em>
+</a>
+<a class="share-link bds_tsina" href="javascript:void(0);" nslog-type="10060301">
+<em class="cmn-icon cmn-icons cmn-icons_logo-sina-weibo"></em>
+</a>
+<a class="bds_wechat" href="javascript:void(0);" nslog-type="10060001">
+<em class="cmn-icon cmn-icons cmn-icons_logo-wechat"></em>
+</a>
+<a class="share-link bds_tqq" href="javascript:void(0);" nslog-type="10060201">
+<em class="cmn-icon cmn-icons cmn-icons_logo-qq"></em>
+</a>
+</div>
+</div>
+<div class="qrcode-wrapper" id="layer" style="display: none">
+<div class="bd_weixin_popup_header">
+<em class="cmn-icon cmn-icons cmn-icons_close"></em>
+<span>分享到微信朋友圈</span>
+</div>
+<div id="wechat-qrcode-img"></div>
+<div class="bd_weixin_popup_footer">打开微信“扫一扫”即可将网页分享至朋友圈</div>
+</div>
+<div></div><div></div>
+
+<script type="text/javascript" src="./预处理命令_百度百科_files/mod_4302fe0.js.下载"></script>
+<script type="text/javascript">require.resourceMap({"res":{"wiki-lemma:widget/lemma_content/mainContent/lemmaRelation/lemmaInsert.js":{"url":"https://bkssl.bdimg.com/static/wiki-lemma/widget/lemma_content/mainContent/lemmaRelation/lemmaInsert_18f1b51.js","pkg":"wiki-lemma:p5","deps":["wiki-common:widget/component/nslog/nslog.js"]},"wiki-lemma:widget/lemma_content/mainContent/lemmaRelation/tangram.js":{"url":"https://bkssl.bdimg.com/static/wiki-lemma/widget/lemma_content/mainContent/lemmaRelation/tangram_459492a.js","pkg":"wiki-lemma:p5"}},"pkg":{"wiki-lemma:p5":{"url":"https://bkssl.bdimg.com/static/wiki-lemma/pkg/wiki-lemma-module-lemmaRelation_853c311.js"}}});</script><script type="text/javascript" src="./预处理命令_百度百科_files/wiki-common-base_e94a5f6.js.下载"></script>
+<script type="text/javascript" src="./预处理命令_百度百科_files/wiki-lemma_be4099e.js.下载"></script>
+<script type="text/javascript" src="./预处理命令_百度百科_files/zhixin_58e6342.js.下载"></script>
+<script type="text/javascript">!function(){  var $ = require('wiki-common:widget/lib/jquery/jquery'),
+    userbar = require('wiki-common:widget/component/userbar-n/userbar-n');
+    
+  userbar.buildUserbar($('#j-wgt-userbar'), null);
+}();
+!function(){  require('wiki-common:widget/component/headTabBar/headTabBar');
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery'),
+      initSearchbar = require('wiki-common:widget/component/searchbar-n/searchbar');  
+    initSearchbar($('.wgt-searchbar-main'));
+  }();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery');
+    var cookie = require('wiki-common:widget/util/cookie');
+    if (!cookie.get('baikedeclare')) {
+        $('#J-declare-wrap').css('display', 'block');
+    }
+    $('#J-declare-close').on('click', function () {
+        // 用户关闭后，不再显示，这里暂设过期时间为1年
+        cookie.set('baikedeclare', 'showed', {
+            expires: 365 * 60 * 60 * 24 * 1000,
+            path: '/'
+        });
+        $('#J-declare-wrap').css('display', 'none');
+    });
+}();
+!function(){var $ = require('wiki-common:widget/lib/jquery/jquery');
+
+var timer = '';
+
+$('.wgt-navbar').on('mouseenter', 'dl', function() {
+  clearTimeout(timer);
+  timer = setTimeout(function() {
+    $('.wgt-navbar').addClass('wgt-navbar-hover');
+  }, 300);
+}).on('mouseleave', function() {
+  clearTimeout(timer);
+  $('.wgt-navbar').removeClass('wgt-navbar-hover');
+}).on('click', 'a', function() {
+  clearTimeout(timer);
+  $('.wgt-navbar').removeClass('wgt-navbar-hover');
+});
+}();
+!function(){                var $ = require('wiki-common:widget/lib/jquery/jquery');
+                var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck');
+
+                // 展现策略
+                rightCheck.editView('10204389', function(res) {
+                    if (!res.errno) {
+                        if (res.data.edit) {
+                            $('.lemmaWgt-lemmaTitle .add-subLemma').css('display', 'inline-block');
+                            $('.top-tool .add-sub-icon').css('display', 'inline-block');
+                        }
+                    } else {
+                        if ('1') {
+                            $('.lemmaWgt-lemmaTitle .add-subLemma').css('display', 'inline-block');
+                            $('.top-tool .add-sub-icon').css('display', 'inline-block');
+                        }
+                    }
+                });
+                require('wiki-lemma:widget/basicElement/addSub/addSub.js')({                    lemmaId: '10204389',                    lemmaTitle:"\u9884\u5904\u7406\u547d\u4ee4",                    lemmaDesc:null,                    versionId: '131906319',                    subLemmaId: '1334643'                });
+            }();
+!function(){        var $ = require('wiki-common:widget/lib/jquery/jquery');
+        var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck');
+
+        // 展现策略
+        rightCheck.editView('10204389', function(res) {
+            if (!res.errno) {
+                if (res.data.divide) {
+                    $('.top-tool .split-icon').css('display', 'block');
+                }
+            }
+        });
+    }();
+!function(){    var nslog = require('wiki-common:widget/component/nslog/nslog');
+	require.async(["wiki-lemma:widget/basicElement/collect/collect"],function(collect){
+		collect({
+            newLemmaId:"10204389",
+			lemmaId:"1334643",
+			subLemmaId:"1334643"
+		});
+	});
+}();
+!function(){    require.async(["wiki-lemma:widget/basicElement/topShare/topShare"],function(topShare){
+        topShare({
+            newLemmaId: '10204389'
+        });
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck');
+    var nsLog = require('wiki-common:widget/component/nslog/nslog');
+    var Dialog = require("wiki-common:widget/ui/dialog/dialog");
+    
+    // 展现策略
+    rightCheck.editView('10204389', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.lemmaWgt-lemmaTitle .edit-lemma').css('display', 'inline-block');
+                // 编辑和申请本人实名验证保证同一行展示
+                if ($('.lemmaWgt-lemmaTitle .personal').length > 0) {
+                  if ($('.lemmaWgt-lemmaTitle .edit-lemma').offset().left > $('.lemmaWgt-lemmaTitle .personal').offset().left) {
+                    $('.lemmaWgt-lemmaTitle .edit-lemma').before('<br/><br/>');
+                  }
+                }
+            } else {
+                nsLog('10003104');              
+                $('.lemmaWgt-lemmaTitle .lock-lemma').show();
+                // 锁定和申请本人实名验证保证同一行展示
+                if ($('.lemmaWgt-lemmaTitle .personal').length > 0) {
+                  if ($('.lemmaWgt-lemmaTitle .lock-lemma').offset().left > $('.lemmaWgt-lemmaTitle .personal').offset().left) {
+                    $('.lemmaWgt-lemmaTitle .lock-lemma').before('<br/><br/>');
+                  }
+                }
+            }
+        } else {
+            if ('1') {
+                $('.lemmaWgt-lemmaTitle .edit-lemma').css('display', 'inline-block');
+                // 编辑和申请本人实名验证保证同一行展示
+                if ($('.lemmaWgt-lemmaTitle .personal').length > 0) {
+                  if ($('.lemmaWgt-lemmaTitle .edit-lemma').offset().left > $('.lemmaWgt-lemmaTitle .personal').offset().left) {
+                    $('.lemmaWgt-lemmaTitle .edit-lemma').before('<br/><br/>');
+                  }
+                }
+            } else {
+                nsLog('10003104');  
+                $('.lemmaWgt-lemmaTitle .lock-lemma').show();
+                // 锁定和申请本人实名验证保证同一行展示
+                if ($('.lemmaWgt-lemmaTitle .personal').length > 0) {
+                  if ($('.lemmaWgt-lemmaTitle .lock-lemma').offset().left > $('.lemmaWgt-lemmaTitle .personal').offset().left) {
+                    $('.lemmaWgt-lemmaTitle .lock-lemma').before('<br/><br/>');
+                  }
+                }
+            }
+        }
+    });
+
+    var canDiscussion = $('.j-discussion-link').length > 0 ? true : false;
+    if (canDiscussion) {
+        // 锁定跳转
+        $('body').on('click', '.lock-lemma', function () {
+            var me = $(this);
+            var content = '<div style="text-align: left;width: 528px">'
+                + '<h2 style="font-size: 20px;color: #333;line-height: 26px;margin-bottom: 20px;">' 
+                + '词条锁定，暂时无法编辑</h2>' 
+                + '<p style="font-size: 16px;color: #333;line-height: 26px;">'
+                + '亲爱的用户，词条存在争议或词条内容较完善都可能被锁定（'
+                + '<a href="/view/10812319.htm" target="_blank">查看详情</a>）。</p>'
+                + '<p style="font-size: 16px;color: #333;line-height: 26px;">'
+                + '如果你认为锁定词条内容存在问题需要修改，可进行以下操作：</p></div>';
+            new Dialog({
+                title: '编辑提示',
+                content: content,
+                btns: [
+                    {
+                        text: '<span style="font-size: 14px">参与词条讨论，反馈词条问题</span>',
+                        key: 'discussion'
+                    }
+                ],
+                onBtnClick: function(btnKey){
+                    if (btnKey === 'discussion') {
+                        window.location.href = '/planet/talk?lemmaId=10204389&category=1';
+                    }
+                }
+            }).show();
+        });
+        // 获取讨论数
+        $.get('/discussion/api/getdiscussioncount?lemmaId=10204389', function (res) {
+            if (res && res.errno === 0 && res.data.discussionCount > 0) {
+                var numText = res.data.discussionCount <= 99 ? res.data.discussionCount : '99+';
+                $('.j-discussion-link .num').text(numText).show();
+            }
+        });
+        $('.lemmaWgt-lemmaTitle .j-discussion-link').on('click', function () {
+            $(this).find('.num').remove();
+        });
+        // 讨论按钮展现量
+        nsLog(90000101, window.location.href, {
+            lemmaid: 10204389
+        });
+    }
+}();
+!function(){	require('wiki-lemma:widget/lemma_content/mainContent/basicInfo/basicInfo')();
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery');
+    var nslog = require('wiki-common:widget/component/nslog/nslog');
+    nslog(10002701);
+    $('.lemmaWgt-lemmaCatalog a').on('click', function () {
+           nslog(10002702);
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck');
+
+    // 展现策略
+    rightCheck.editView('10204389', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('1') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck');
+
+    // 展现策略
+    rightCheck.editView('10204389', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('1') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck');
+
+    // 展现策略
+    rightCheck.editView('10204389', function(res) {
+        if (!res.errno) {
+            if (res.data.edit) {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        } else {
+            if ('1') {
+                $('.para-title .edit-icon').css('display', 'block');
+            }
+        }
+    });
+}();
+!function(){        require.async(["wiki-common:widget/lib/jquery/jquery"],function($){
+            function openTagToggle(node) {
+                if ($(node).hasClass("collapse")) {
+                    $(node).removeClass("collapse");
+                    $("#open-tag").css("height", '22px');
+                } else {
+                    $(node).addClass("collapse");
+                    $("#open-tag").css("height", $("#open-tag-item").css("height"));
+                }
+            }
+            if (parseInt($("#open-tag-item").css("height")) <= 30) {
+                $('#open-tag-collapse').hide();
+            }
+            $("#open-tag-collapse").on("click", function () {
+                openTagToggle($("#open-tag")[0]);
+            });
+        });
+    }();
+!function(){        require('wiki-lemma:widget/lemma_content/configModule/zhixin/zhixin')(
+            10204389,
+            '预处理命令'
+        );
+    }();
+!function(){    require.async(["wiki-lemma:widget/lemma_content/mainContent/lemmaStatistics/lemmaStatistics"],function(init){
+        init({
+            newLemmaIdEnc:"69510a1670bdad1b68c4ec92"
+        });
+    });
+}();
+!function(){	require.async(["wiki-lemma:widget/lemma_content/mainContent/sideCatalog/sideCatalog"],function(SideCatalog){
+		new SideCatalog();
+	});
+}();
+!function(){        require.async(["wiki-lemma:widget/promotion/fengchao/fengchao","wiki-lemma:widget/promotion/unionAd/unionAd"], function (init, unionAd) {
+            init({
+                newLemmaId: "10204389",
+                lemmaTitle: "预处理命令",
+                encodeLemmaTitle: "%D4%A4%B4%A6%C0%ED%C3%FC%C1%EE",
+                adManager: null
+            }, {
+                errFn: unionAd,
+                dom: $('#side_box_unionAd')
+            });
+        });
+    }();
+!function(){        require.async(['wiki-lemma:widget/promotion/guessLike/guessLike'], function (app) {
+            app.init({
+                lemmaTitle: '预处理命令',
+                adManager: null
+            });
+        });
+    }();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery');
+    var Dialog = require("wiki-common:widget/ui/dialog/dialog");
+    var userLogin = require('wiki-common:widget/component/userLogin/userLogin');
+    var unameFiller = require('wiki-common:widget/component/unameFiller/unameFiller');
+    var rightCheck = require('wiki-lemma:widget/tools/rightCheck/rightCheck');
+    var nsLog = require('wiki-common:widget/component/nslog/nslog');
+
+            var isEnterprise = false;
+        var enterpriseOwnerUserId = 0;
+    
+    var userId = 0;
+    var editUrl = '/edit/' + encodeURIComponent('预处理命令') + '/' + '10204389';
+    var pgcUrl = '/enterprise/editpgc?lemmaId=10204389';
+    var canDiscussion = $('.j-discussion-link').length > 0 ? true : false;
+
+    userLogin.regist({
+        onLogin: function(user) {
+            userId = user ? user.uid : 0;
+        }
+    });
+
+    function gotoEdit(url, isMidNight) {
+        if (isMidNight) {
+            Dialog.alert({
+                title: '编辑提示',
+                subMsg: '晚23:00至次日8:00，因审核系统例行维护，您提交的版本可能需要较长时间才能通过，望您谅解。',
+                onConfirm: function() {
+                    window.location.href = url;
+                }
+            });
+        } else {
+            window.location.href = url;
+        }    
+    }
+
+    function showChoseEditDialog(pgcCallback, ugcCallback) {
+        new Dialog({
+            title: '编辑提示',
+            subMsg: '<p>您已开通企业百科服务，推荐您直接编辑“官方资料”，官方资料仅限企业百科绑定的百科账号修改，其他用户账号不可修改。</p><p>如果您想修改其他网友编辑的普通词条内容，请注意遵守百科百科编辑规则。<p>',
+            btns: [{
+            key: 'pgc',
+            text: '编辑官方资料'
+            }, {
+            style: 'white',
+            text: '修改普通词条',
+            key: 'ugc'
+            }],
+            onBtnClick: function(btnKey){
+                if (btnKey === 'pgc') {
+                    pgcCallback && pgcCallback();
+                } else if (btnKey === 'ugc') {
+                    ugcCallback && ugcCallback();
+                }
+            }
+        }).show();
+    }
+
+    function checkUserLegal(res) {
+        var legal = false;
+        switch (res.errno) {
+            case 100001:
+                nsLog('10003106');
+                userLogin.showLoginPop();
+                break;
+            case 100006:
+                unameFiller.show();
+                break;
+            default:
+                legal = true;
+        }
+        return true;
+    }
+
+    function checkUgc(res, url) {
+        if (res.errno) {
+            switch (res.errno) {
+                case 100005:
+                    alert('对不起，您目前被封禁');
+                    break;
+                case 110001:
+                    alert('对不起，该词条被锁定');
+                    break;
+                case 110007:
+                    alert('对不起，消歧页无法编辑');
+                    break;
+                case 110005:
+                    nsLog('10003101');
+                    var content = '<div style="text-align: left;width: 490px">'
+                        + '<h2 style="font-size: 20px;color: #333;line-height: 26px;margin-top: 10px;margin-bottom: 20px;">' 
+                        + '对不起，你暂时没有权限编辑该词条</h2>' 
+                        + '<p style="font-size: 16px;color: #333;line-height: 26px;margin-bottom: 17px;">'
+                        + '亲爱的用户，该词条内容已较完善，需百科等级达到4级且通过率达85%才可编辑哦。</p>'
+                        + '<p style="font-size: 16px;color: #333">你当前百科等级为'
+                        + res.data.userInfo.level + '级、通过率'
+                        + res.data.userInfo.passRatio + '%，可进行以下操作：</p></div>';
+                    var btns = [
+                        {
+                            key: 'join',
+                            text: '<span style="font-size: 14px;text-align: center;vertical-align: middle;display: table-cell;">反馈词条问题，参与百科共建</span>'
+                        },
+                        {
+                            text: '<span style="font-size: 14px;text-align: center;vertical-align: middle;display: table-cell;">参加成长任务，提升编辑权限</span>',
+                            key: 'task'
+                        }
+                    ];
+                    if (canDiscussion) {
+                        btns = [
+                            {
+                                key: 'discussion',
+                                text: '<span style="font-size: 14px">参与词条讨论，反馈词条问题</span>'
+                            },
+                            {
+                                text: '<span style="font-size: 14px">参加成长任务，提升编辑权限</span>',
+                                key: 'task'
+                            }
+                        ];
+                    }
+                    new Dialog({
+                        title: '编辑提示',
+                        content: content,
+                        btns: btns,
+                        onBtnClick: function(btnKey){
+                            if (btnKey === 'discussion') {
+                                window.location.href = '/planet/talk?lemmaId=10204389&category=1';
+                            } else if (btnKey === 'task') {
+                                window.location.href = '/usercenter#guide';
+                            } else if (btnKey === 'join') {
+                                window.location.href = '/feedback';
+                            }
+                        }
+                    }).show();
+                    break;
+                case 110008:
+                    nsLog('10003102');
+                    var content = '<div style="text-align: left;width: 490px">'
+                        + '<h2 style="font-size: 20px;color: #333;line-height: 26px;margin-bottom: 20px;margin-top: 10px;">' 
+                        + '对不起，你暂时没有权限编辑该词条</h2>' 
+                        + '<p style="font-size: 16px;color: #333;line-height: 26px;margin-bottom: 17px;">'
+                        + '亲爱的用户，该词条内容已较完善，需百科等级达到6级且通过率达85%才可编辑哦。</p>'
+                        + '<p style="font-size: 16px;color: #333">你当前百科等级为'
+                        + res.data.userInfo.level + '级、通过率'
+                        + res.data.userInfo.passRatio + '%，可进行以下操作：</p></div>';
+                    var btns = [
+                        {
+                            key: 'join',
+                            text: '<span style="font-size: 14px;text-align: center;vertical-align: middle;display: table-cell;">反馈词条问题，参与百科共建</span>'
+                        },
+                        {
+                            text: '<span style="font-size: 14px;text-align: center;vertical-align: middle;display: table-cell;">参加成长任务，提升编辑权限</span>',
+                            key: 'task'
+                        }
+                    ];
+                    if (canDiscussion) {
+                        btns = [
+                            {
+                                key: 'discussion',
+                                text: '<span style="font-size: 14px">参与词条讨论，反馈词条问题</span>'
+                            },
+                            {
+                                text: '<span style="font-size: 14px">参加成长任务，提升编辑权限</span>',
+                                key: 'task'
+                            }
+                        ];
+                    }
+                    new Dialog({
+                        title: '编辑提示',
+                        content: content,
+                        btns: btns,
+                        onBtnClick: function(btnKey){
+                            if (btnKey === 'discussion') {
+                                window.location.href = '/planet/talk?lemmaId=10204389&category=1';
+                            } else if (btnKey === 'task') {
+                                window.location.href = '/usercenter#guide';
+                            } else if (btnKey === 'join') {
+                                window.location.href = '/feedback';
+                            }
+                        }
+                    }).show();
+                    break;
+                case 470001:
+                    alert('系统错误，请刷新重试');
+                    break;
+                case 110003:
+                    nsLog('10003103');
+                    Dialog.alert({
+                        title: '编辑提示',
+                        subMsg: '很抱歉，该词条有其他用户编辑的版本正在提交，您暂时无法编辑。<br/>百科建议您晚些时候再编辑该词条，或者尝试编辑其他的词条。'
+                    });
+                    break;
+            }
+        } else {
+            if (!res.data.right.noAudit) {
+                Dialog.alert({
+                    title: '编辑提示',
+                    subMsg: '很抱歉，该词条有其他用户编辑的版本正在提交，您暂时无法编辑。<br/>百科建议您晚些时候再编辑该词条，或者尝试编辑其他的词条。'
+                });
+                return;
+            }
+            gotoEdit(url, res.data.notice.isMidNight);
+        }
+    }
+
+    $(document.body).on('click', '.j-edit-link', function() {
+        nsLog('10003100');
+        var dl = $(this).attr('data-edit-dl');
+        if (dl) {
+            var url = editUrl + '?dl=' + dl;
+        } else {
+            var url = editUrl;
+        }
+
+        rightCheck.preeditCheck('10204389', '预处理命令', '预处理命令', '131906319', '', function(res) {
+            if (!checkUserLegal(res)) {
+                return;
+            }
+            if (isEnterprise && enterpriseOwnerUserId === userId) {
+                showChoseEditDialog(function() {
+                    location.href = pgcUrl;
+                }, function() {
+                    checkUgc(res, url);
+                });
+            } else {
+                checkUgc(res, url);
+            }
+        });
+    });
+}();
+!function(){  require.async(["wiki-common:widget/lib/jquery/jquery","wiki-common:widget/component/footer/footer_feedback"], function($, feedback){
+    feedback({el: '#J-bk-feedback-main',
+      proData: {
+        "extend_feedback_channel": null
+      }
+    });
+    feedback({el: '#J-bk-feedback-query', config: {
+        appid: 215645,
+        productLine: 20184,
+        needContactWay: false,
+        issuePlaceholder: '亲爱的百度百科用户，请在此填写您的质疑内容及原因哦～'
+      },
+      proData: {
+        "kw": $('#J-bk-feedback-query').data('lemma')
+      }
+    });
+  });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery'),
+      initSearchbar = require('wiki-common:widget/component/searchbar-n/searchbar');  
+    initSearchbar($('.wgt-searchbar-simple'));
+  }();
+!function(){    require.async(["wiki-lemma:widget/tools/searchHeader/toolButtons-n/toolButtons"],function(init){
+        init({
+            lemmaId:"1334643",
+            subLemmaId:"1334643",
+            newLemmaId:"10204389"
+        });
+    });
+}();
+!function(){    require('wiki-lemma:widget/tools/searchHeader/toolButtons-n/userInfo')();
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery'),
+      animation = require('wiki-common:widget/util/animation'),
+      nslog = require('wiki-common:widget/component/nslog/nslog'),
+      initSearchbar = require('wiki-common:widget/component/searchbar/searchbar');
+
+    var isFadeIn = false,
+        isFadeOut = false;
+
+    var fadeInAni, fadeOutAni;
+
+    $(window).on('scroll', function(e) {
+        var scrollTop = $(this).scrollTop();
+
+        if (scrollTop > 200 && !isFadeIn && $('.lemmaWgt-searchHeader').css('display') == 'none') {
+            fadeOutAni && fadeOutAni.stop();
+            fadeInAni = animation({
+                duration: 200,
+                easing: 'linear',
+                onStart: function() {
+                    isFadeOut = false;
+                    isFadeIn = true;
+                    $('.lemmaWgt-searchHeader').css('display', 'block');
+                },
+                onStep: function(progress) {
+                    $('.lemmaWgt-searchHeader').css('opacity', progress)
+                },
+                onComplete: function(progress) {
+                    isFadeIn = false;
+                    nslog(10010007);
+                }
+            });
+        } else if (scrollTop <= 200 && !isFadeOut && $('.lemmaWgt-searchHeader').css('display') == 'block') {
+            fadeInAni && fadeInAni.stop();
+            fadeOutAni = animation({
+                duration: 300,
+                easing: 'linear',
+                onStart: function() {
+                    $('.lemmaWgt-searchHeader #suggestion').hide();
+                    isFadeIn = false;
+                    isFadeOut = true;
+                },
+                onStep: function(progress) {
+                    $('.lemmaWgt-searchHeader').css('opacity', 1 - progress);
+                },
+                onComplete: function(progress) {
+                    isFadeOut = false;
+                    $('.lemmaWgt-searchHeader').css('display', 'none');
+                }
+            });
+        }
+    });
+}();
+!function(){    require('wiki-lemma:widget/tools/newSideShare/qzopensl');
+    require.async(["wiki-lemma:widget/tools/newSideShare/taskSideShare"],function(taskShare){
+        taskShare.init({
+            title: '预处理命令',
+            desc: "\u7a0b\u5e8f\u8bbe\u8ba1\u8bed\u8a00\u7684\u9884\u5904\u7406\u7684\u6982\u5ff5\uff1a\u5728\u7f16\u8bd1\u4e4b\u524d\u8fdb\u884c\u7684\u5904\u7406\u3002 C\u8bed\u8a00\u7684\u9884\u5904\u7406\u4e3b\u8981\u6709\u4e09\u4e2a\u65b9\u9762\u7684\u5185\u5bb9\uff1a 1.\u5b8f\u5b9a\u4e49\uff1b 2.\u6587\u4ef6\u5305\u542b\uff1b 3.\u6761\u4ef6\u7f16\u8bd1\u3002 \u9884\u5904\u7406\u547d\u4ee4\u4ee5\u7b26\u53f7\u201c#\u201d\u5f00\u5934\u3002",
+            pic: '',
+            url: '',
+            qqPic: '',
+            newLemmaId: '10204389',
+            lemmaTitle: '预处理命令'
+        });
+    });
+}();
+!function(){    var $ = require('wiki-common:widget/lib/jquery/jquery');
+    var nslog = require("wiki-common:widget/component/nslog/nslog");
+    var testElem = require('wiki-common:widget/component/testElem/testElem');
+    var cmsModuleLoader = require('wiki-common:widget/component/cmsModuleLoader/cmsModuleLoader');
+
+    function requireAsync() {
+        require.async(['wiki-lemma:widget/tools/announcement/announcement']);
+    }
+
+    cmsModuleLoader('/api/wikiui/getlemmaconfig', [{
+        name: 'announcement',
+        script: 'wiki-lemma:widget/tools/announcement/announcement.js'
+    }]);
+
+    require.async(["wiki-lemma:widget/tools/lazyLoad/lazyLoad"], function(LazyLoad) {
+        new LazyLoad();
+    });
+
+    require.async(['wiki-common:widget/component/nslog/nslog','wiki-common:widget/lib/jquery/jquery'], function(nslog, $) {
+        nslog().setGlobal({
+            lemmaId: "1334643",
+            newLemmaId: "10204389",
+            subLemmaId: "1334643",
+            lemmaTitle: "预处理命令"
+        });
+
+        // 词条页 pv
+        nslog(9322);
+
+        // 新版头部pv（小流量）
+        if ($('.pc-header-new').length > 0) {
+            nslog(9069);
+        }
+
+        // 链接点击 pv
+        var lemmaPageRegExp = new RegExp(/\/subview\/\d+|\/view\/\d+|\/item\//i);
+        $('body').on('mousedown', 'a', function() {
+            var href = $(this).attr('href');
+            if (href && href.indexOf('/') >= 0 && href.indexOf('#') !== 0) {
+                // 链接点击 pv
+                nslog(10000001);
+                if (lemmaPageRegExp.test(href)) {
+                    // 词条页链接点击 pv
+                    nslog(10000002, window.location.href, {
+                        targetTitle: $(this).text()
+                    });
+                }
+            }
+        });
+
+        /****** 词条页站内流转需求统计 start ******/
+        (function () {
+            // 各种统计配置
+            var circulationLinkCfg = {
+                innerLink: [ // 内链
+                    '.para',
+                    '.lemmaWgt-baseInfo-simple-largeMovie',
+                    '.lemmaWgt-baseInfo-simple-largeStar',
+                    '.basic-info .basicInfo-block',
+                    '.lemma-summary',
+                    '.lemmaWgt-lemmaSummary',
+                    '.view-tip-panel',
+                    '.horizontal-module',
+                    '.lemmaWgt-roleIntroduction',
+                    '.dramaSeries .dramaSerialList',
+                    '.module-music',
+                    '.table-view',
+                    '[log-set-param="table_view"]',
+                    '.list-module',
+                    '.cell-module',
+                    '.baseBox .dl-baseinfo', // 配置后台字段
+                    '.pvBtn-box .leadPVBtnWrapper',
+                    '.drama-actor',
+                    '#staffList',
+                    '.starMovieAndTvplay',
+                    '.main_tab:not(.main_tab-defaultTab)' // 除去词条tab外的tab
+                ],
+                relationTable: '.rs-container-foot', // 关系表
+                peopleRelation: '.star-info-block.relations, .lemmaWgt-focusAndRelation', // 人物关系（明星+普通）
+                moduleActors: '.featureBaseInfo .actors, .lemmaWgt-majorActors', // 主要演员、嘉宾、主持人
+                moduleWorks: '.featureBaseInfo .works, .large-feature .works', // 代表作品
+                moduleQuarterly: '.featureBaseInfo .po_quarterly, .mian_quarterly', // 分季介绍
+                rankStar: '.rank-list.stars-rank', // 明星榜
+                rankDrama: '.drama-rank-list', // 电视剧榜
+                specialTopic: '.special-topic', // 专题模块
+                modDetailTable: '#modDetailTable', // 关系表出图
+                chuizhitu: '.chuizhitu', // 垂直化模块
+                polysemantList: '.polysemantList-wrapper' // 义项切换
+            };
+            /****** 连接统计 ******/
+            function clickNslogFn() {
+                for (var k in circulationLinkCfg) {
+                    if (k === 'innerLink') {
+                        // 词条内链到词条页
+                        var tempArr = circulationLinkCfg[k];
+                        for (var i = 0, l = tempArr.length; i < l; i++) {
+                            tempArr[i] += ' a';
+                        }
+                        var sSelector = tempArr.join(', ');
+
+                        $('body').on('mousedown', sSelector, {key: k},function(e) {
+                            var key = e.data.key;
+                            var href = $(this).attr('href');
+                            var tar = $(this).attr('target') || '';
+                            if (href && href.indexOf('/') >= 0 && href.indexOf('#') !== 0
+                            && tar === '_blank' && lemmaPageRegExp.test(href)) {
+                                // 词条页普通内链点击 pv
+                                nslog(10000004, null ,{division: key});
+                            }
+                        });
+                    } else {
+                        // 模块到词条页链接
+                        $(circulationLinkCfg[k]).on('mousedown', 'a', {key: k}, function (e) {
+                            var key = e.data.key;
+                            var href = $(this).attr('href');
+                            if (href && href.indexOf('#') !== 0 && lemmaPageRegExp.test(href)) {
+                                // 词条页配置模块链接点击 pv
+                                nslog(10000004, null, {division: key});
+                            }
+                        });
+                    }
+                }
+            }
+            // 发起统计请求
+            clickNslogFn();
+
+            /****** 各模块展现量pv ******/
+            function checkModuleIsShow() {
+                var result = [];
+                for (var k in circulationLinkCfg) {
+                    if (k !== 'innerLink' && k !== 'relationTable') {
+                        !!$(circulationLinkCfg[k]).html() && result.push(k);
+                    }
+                }
+                if (result.length > 0) {
+                    nslog(10000005, null, {showModules: result.join(',')});
+                }
+            }
+            checkModuleIsShow();
+
+        })();
+        /****** 词条页站内流转需求统计 end ******/
+
+    });
+
+    // 广告接入 wikiad 统一加载
+    // log 词条页广告被拦截情况（此处 log 请求行为）
+    nslog(70000101, window.location.href, {
+        api: 'lemma-ad',
+        action: 'request'
+    });
+    var tags = [{"tagId":0,"tagName":"\u79d1\u5b66"},{"tagId":0,"tagName":"\u5b66\u79d1"}];
+    var tagsArray = [];
+    for (var key in tags) {
+        tagsArray.push(tags[key].tagName);
+    }
+    $.ajax({
+        type: 'GET',
+        url: '/api/wikiad/getsquirrels',
+        data: {
+            lemmaId: 10204389,
+            tags: tagsArray.join()
+        },
+        cache: false,
+        dataType: 'JSON',
+        success: function (res) {
+            // log 词条页广告被拦截情况（此处 log 请求成功）
+            nslog(70000101, window.location.href, {
+                api: 'lemma-ad',
+                action: 'success'
+            });
+
+            if (!res.errno) {
+                if (res.data[5]) {
+                    require.async(['wiki-lemma:widget/promotion/rightPreciseAd/rightPreciseAd'], function(rightPreciseAd) {
+                        rightPreciseAd(res.data[5]);
+                        nslog(10002201, location.href, {
+                            adId: res.data[5][0].adId,
+                            adTitle: res.data[5][0].name,
+                            adPos: 5
+                        });
+                    });
+                } else if (res.data[1]) {
+                                        require.async(['wiki-lemma:widget/promotion/vbaike/vbaike'], function(vbaike) {
+                        vbaike(res.data[1]);
+                        for(var i in res.data[1]) {
+                            nslog(10002201, location.href, {
+                                adId: res.data[1][i].adId,
+                                adTitle: res.data[1][i].name,
+                                adPos: 1
+                            });
+                        }
+                    });
+                                    }
+                if (res.data[9]) {
+                                        require.async(['wiki-lemma:widget/promotion/rightBigAd/rightBigAd'], function(rightBigAd) {
+                        rightBigAd(res.data[9]);
+                            nslog(10002201, location.href, {
+                                adId: res.data[9][0].adId,
+                                adTitle: res.data[9][0].name,
+                                adPos: 9
+                            });
+                    });
+                                    } else if(res.data[2]) {
+                    require.async(['wiki-lemma:widget/promotion/slide/slide'], function(slide) {
+                        slide(res.data[2]);
+                        for(var i in res.data[2]) {
+                            nslog(10002201, location.href, {
+                                adId: res.data[2][i].adId,
+                                adTitle: res.data[2][i].name,
+                                adPos: 2
+                            });
+                        }
+                    });
+                }
+                if (res.data[3]) {
+                                        require.async(['wiki-lemma:widget/promotion/topAd/topAd'], function(topAd) {
+                        topAd(res.data[3]);
+                        nslog(10002201, location.href, {
+                            adId: res.data[3][0].adId,
+                            adTitle: res.data[3][0].name,
+                            adPos: 3
+                        });
+                    });
+                                    }
+                if (res.data[4]) {
+                                        require.async(['wiki-lemma:widget/promotion/rightAd/rightAd'], function(rightAd) {
+                        rightAd(res.data[4]);
+                        nslog(10002201, location.href, {
+                            adId: res.data[4][0].adId,
+                            adTitle: res.data[4][0].name,
+                            adPos: 4
+                        });
+                    });
+                                    }
+                if (res.data[15]) {
+                    require.async(['wiki-lemma:widget/promotion/banner/banner'], function(banner) {
+                        banner(res.data[15]);
+                        nslog(10002201, location.href, {
+                            adId: res.data[15][0].adId,
+                            adTitle: res.data[15][0].name,
+                            adPos: 15
+                        });
+                    });
+                }
+                if (res.data[16]) {
+                    require.async(['wiki-lemma:widget/promotion/declaration/declaration'], function(declaration) {
+                        declaration(res.data[16]);
+                        nslog(10002201, location.href, {
+                            adId: res.data[16][0].adId,
+                            adTitle: res.data[16][0].name,
+                            adPos: 16
+                        });
+                    })
+                }
+            } else {
+                return;
+            }
+
+            setTimeout(function () {
+                var elemArr = {};
+                res.data[1] && res.data[1].length > 0 && (elemArr['lemma-vbaike-ad'] = $('.lemmaWgt-promotion-vbaike .promotion_viewport a:eq(0) img').get(0));
+                res.data[2] && res.data[2].length > 0 && (elemArr['lemma-slide-ad'] = $('.lemmaWgt-promotion-slide .promotion_viewport a:eq(0) img').get(0));
+                res.data[3] && res.data[3].length > 0 && (elemArr['lemma-navbar-ad'] = {
+                    node: $('.header [nslog-type="10002202"]').get(0),
+                    validations: {
+                        'noBackgroundImage': function() {
+                            return $('.header [nslog-type="10002202"]').css('background-image').indexOf(res.data[3][0].picUrl) < 0
+                        }
+                    }
+                });
+                res.data[4] && res.data[4].length > 0 && (elemArr['lemma-side-ad'] = {
+                    node: $('.right-ad img').get(0),
+                    validations: {
+                        'noBackgroundImage': function() {
+                            return $('.right-ad img').attr('src').indexOf(res.data[4][0].picUrl) < 0
+                        }
+                    }
+                });
+                res.data[15] && res.data[15].length > 0 && (elemArr['lemma-configModule-banner'] = $('.configModuleBanner').get(0));
+                res.data[16] && res.data[16].length > 0 && (elemArr['lemma-configModule-declaration'] = $('.lemmaWgt-declaration').get(0));
+
+                testElem.log(elemArr, 70000102);
+            }, 1000);
+        },
+        error: function () {
+            // log 词条页广告被拦截情况（此处 log 请求失败）
+            nslog(70000101, window.location.href, {
+                api: 'lemma-ad',
+                action: 'error'
+            });
+        }
+    });
+
+    // 设置分享内容
+    window.BKShare.setCommon({
+        bdText: "\u3010\u9884\u5904\u7406\u547d\u4ee4_\u767e\u5ea6\u767e\u79d1\u3011\u7a0b\u5e8f\u8bbe\u8ba1\u8bed\u8a00\u7684\u9884\u5904\u7406\u7684\u6982\u5ff5\uff1a\u5728\u7f16\u8bd1\u4e4b\u524d\u8fdb\u884c\u7684\u5904\u7406\u3002 C\u8bed\u8a00\u7684\u9884\u5904\u7406\u4e3b\u8981\u6709\u4e09\u4e2a\u65b9\u9762\u7684\u5185\u5bb9\uff1a 1.\u5b8f\u5b9a\u4e49\uff1b 2.\u6587\u4ef6\u5305\u542b\uff1b 3.\u6761\u4ef6\u7f16\u8bd1\u3002 \u9884\u5904\u7406\u547d\u4ee4\u4ee5\u7b26\u53f7\u201c#\u201d\u5f00\u5934\u3002.....\uff08\u5206\u4eab\u81ea@\u767e\u5ea6\u767e\u79d1\uff09",
+        bdDesc: '',
+        bdUrl: 'http:\/\/baike.baidu.com\/item\/%E9%A2%84%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4\/10204389',
+        bdPic: '',
+        onBeforeClick: function (){
+            $('.bdshare_dialog_box').hide();
+        }
+    });
+
+    // 底部投诉带入当前页面 url
+    var map = [1, 2, 6, 5];
+    $('.wgt-footer-main .suggestion').find('a').each(function(i) {
+        $(this).attr('href', 'http://help.baidu.com/newadd?word=%E9%A2%84%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4' + '&&submit_link=' + encodeURIComponent(window.location.href) + '&prod_id=10&category=' + map[i]);
+    });
+
+    // 为超出预设内容的表格添加table-responsive控制
+    $('.main-content').find('table').each(function(index) {
+        var $that = $(this);
+        if ($that.width() > 790) {
+            $that.wrap('<div class="table-responsive"></div>');
+        }
+    });
+}();
+!function(){      require('wiki-common:widget/component/psLink/psLink');
+    }();
+!function(){      require('wiki-common:widget/component/recruitment/recruitment');
+    }();</script><div class="wgt_overlay" style="opacity: 0; position: fixed;"></div><dl class="wgt_dialog modal add-sub-dialog" style="display: none;">
+<dt>添加义项描述<a href="https://baike.baidu.com/view/10811633.htm" target="_blank">义项命名规则</a></dt>
+<dd class="close dialog-btn" title="关闭" btn-key="close"><em class="cmn-icon cmn-icons cmn-icons_close"></em></dd>
+<dd class="con no-icon no-sub-msg">
+<div class="add-sub">                          <div class="content-inner">                              <div class="tip">您需要给原有的义项和新增加的义项都写一个“义项描述”，让读者能分清楚同名的两个事物。</div>                              <div class="example">                                  <div class="example-tit">示例</div>                                  <div class="example-show">                                      <ul>                                          <li class="show-li clearfix"><div class="tit">词条名</div><div class="content">环太平洋</div></li>                                          <li class="show-li clearfix"><div class="tit">原有义项描述</div><div class="content">地理区域</div></li>                                          <li class="show-li clearfix"><div class="tit">新增义项描述</div><div class="content">2013年美国科幻电影</div></li>                                      </ul>                                  </div>                              </div>                              <form action="https://baike.baidu.com/createsub/%E9%A2%84%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4" method="get">                                  <div class="form-item name-lemma clearfix"><label for="">词条名</label><input type="text" value="预处理命令" disabled="disabled"></div>                                  <div class="form-item clearfix"><label for="">原有义项描述(不大于20字)</label><input type="text" value="" name="ori_desc"></div>                                  <div class="form-item clearfix"><label for="">新增义项描述(不大于20字)</label><input type="text" value="" name="desc"></div>                                  <div class="form-item form-notice"><strong>[注意]</strong>如果原义项中已经罗列了多个义项的内容，那么建议您不要直接添加义项，而是<a href="http://tieba.baidu.com/p/4152042379" target="_blank">报告未拆分多义词。</a></div>                                  <div class="add-sub-main-footer"><input type="submit" class="add-sub-main-button add-sub-main-accept" value="确定"><span class="add-sub-main-button add-sub-main-cancel">取消</span></div>                              </form>                          </div>                      </div>
+</dd>
+</dl>
+<script type="text/javascript">
+  var Hunter = window.Hunter || {};
+  Hunter.userConfig = Hunter.userConfig || [];
+  </script>
+<script type="text/javascript" src="./预处理命令_百度百科_files/baike.js.下载" defer=""></script><script type="text/javascript">
+  // DOM Ready时，统计用户可操作时间。
+  alog('speed.set', 'drt', +new Date);
+
+  void function(a,b,c,d,e,f){function g(b){a.attachEvent?a.attachEvent("onload",b,!1):a.addEventListener&&a.addEventListener("load",b)}function h(a,c,d){d=d||15;var e=new Date;e.setTime((new Date).getTime()+1e3*d),b.cookie=a+"="+escape(c)+";path=/;expires="+e.toGMTString()}function i(a){var c=b.cookie.match(new RegExp("(^| )"+a+"=([^;]*)(;|$)"));return null!=c?unescape(c[2]):null}function j(){var a=i("PMS_JT");if(a){h("PMS_JT","",-1);try{a=a.match(/{["']s["']:(\d+),["']r["']:["']([\s\S]+)["']}/),a=a&&a[1]&&a[2]?{s:parseInt(a[1]),r:a[2]}:{}}catch(c){a={}}a.r&&b.referrer.replace(/#.*/,"")!=a.r||alog("speed.set","wt",a.s)}}if(a.alogObjectConfig){var k=a.alogObjectConfig.sample,l=a.alogObjectConfig.rand;d="https:"===a.location.protocol?"https://fex.bdstatic.com"+d:"http://fex.bdstatic.com"+d,k&&l&&l>k||(g(function(){alog("speed.set","lt",+new Date),e=b.createElement(c),e.async=!0,e.src=d+"?v="+~(new Date/864e5)+~(new Date/864e5),f=b.getElementsByTagName(c)[0],f.parentNode.insertBefore(e,f)}),j())}}(window,document,"script","/hunter/alog/dp.min.js");
+</script>
+
+<div class="wgt_bubble wgt-bubble-userMenu" style="display: none;"><ul>
+<li class="top"><a href="https://baike.baidu.com/usercenter" target="_blank">我的百科</a></li>
+<li><a href="https://baike.baidu.com/usercenter/tasks#mine" target="_blank">我的任务</a></li>
+<li><a href="https://baike.baidu.com/usercenter/lemmas" target="_blank">我的词条</a></li>
+<li><a href="https://passport.baidu.com/center" target="_blank">账号设置</a></li>
+<li class="bottom logout"><a data-action="logout" href="javascript:;">退出</a></li>
+</ul><em class="tail"></em></div><div class="wgt_bubble wgt-bubble-userMsg" style="display: none;"><ul>
+<li class="top">
+<a href="https://baike.baidu.com/wikimessage/msghome#/notify" target="_blank">
+<span class="userMsgType">通知</span></a>
+</li>
+<li class="bottom">
+<a href="https://baike.baidu.com/wikimessage/msghome#/private" target="_blank">
+<span class="userMsgType">私信</span></a>
+</li>
+</ul><em class="tail"></em></div><div class="right-ad"><a class="rightAd-link" nslog-type="10002202" nslog-params="{&quot;adId&quot;:&quot;6136&quot;, &quot;adTitle&quot;: &quot;秒懂星课堂-尹恩惠qx&quot;, &quot;adPos&quot;: 4}" title="" href="https://baike.baidu.com/wikisecond/videoflow?lemmaId=33549&amp;secondId=547483" target="_blank"><img src="./预处理命令_百度百科_files/77094b36acaf2edd6768da6e801001e938019398.jpg" alt=""></a><a class="rightAd-close" href="javascript:;"></a></div></body></html>
