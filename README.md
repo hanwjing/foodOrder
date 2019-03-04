@@ -6,4 +6,4 @@
 <p>3. 使用node+express搭建后台服务器</p>
 <p>4. 使用mysql提供数据支持</p
   
-<a href="https://47.106.167.138:3000" target="_blank">项目地址</a>
+<a href="http://47.106.165.138:3000" target="_blank">项目地址</a>
